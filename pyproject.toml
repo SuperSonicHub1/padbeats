@@ -1,0 +1,29 @@
+[tool.poetry]
+name = "padbeats"
+version = "0.1.0"
+description = ""
+authors = ["Kyle Anthony Williams <kyle.anthony.williams2@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+textual = "^0.45.1"
+numpy = "^1.26.2"
+clockblocks = "^0.6.9"
+mido = "^1.3.2"
+python-rtmidi = "^1.5.8"
+
+
+[tool.poetry.group.dev.dependencies]
+black = "^23.12.0"
+flake8 = "^6.1.0"
+isort = "^5.13.2"
+mypy = "^1.7.1"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.isort]
+# https://pycqa.github.io/isort/docs/configuration/black_compatibility.html
+profile = "black"
